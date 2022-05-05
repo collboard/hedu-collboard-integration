@@ -1,8 +1,8 @@
 import React from 'react';
-import { IconColor } from '../../../30-components/menu/Icon';
+import { IconColor } from '@collboard/modules-sdk';
 import { Authors } from '../../../50-systems/ModuleStore/Authors';
-import { internalModules } from '../../../50-systems/ModuleStore/internalModules';
-import { makeAttributeModule } from '../../../50-systems/ModuleStore/makers/makeAttributeModule';
+import { internalModules } from '@collboard/modules-sdk';
+import { makeAttributeModule } from '@collboard/modules-sdk';
 
 export const heduDrawingColors: { [key: string]: string } = {
     black: '#000000',

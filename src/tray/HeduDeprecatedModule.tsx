@@ -1,9 +1,9 @@
 import React from 'react';
 import { Vector } from 'xyzt';
-import { Authors } from '../../../50-systems/ModuleStore/Authors';
-import { internalModules } from '../../../50-systems/ModuleStore/internalModules';
-import { makeArtModule } from '../../../50-systems/ModuleStore/makers/makeArtModule';
-import { Abstract2dArt } from '../../../71-arts/26-Abstract2dArt';
+import { Authors } from '@collboard/modules-sdk';
+import { internalModules } from '@collboard/modules-sdk';
+import { makeArtModule } from '@collboard/modules-sdk';
+import { Abstract2dArt } from '@collboard/modules-sdk';
 import { makeDepracatedWarningModule } from './makeDepracatedWarningModule';
 
 /**

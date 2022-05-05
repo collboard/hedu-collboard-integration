@@ -1,10 +1,6 @@
+import { IFactory, IModuleDefinition, IModuleManifest, NotificationSystem, Translate } from '@collboard/modules-sdk';
 import { Destroyable } from 'destroyable';
 import React from 'react';
-import { IFactory } from '../../../40-utils/IFactory';
-import { IModuleDefinition } from '../../../50-systems/ModuleStore/interfaces/IModule';
-import { IModuleManifest } from '../../../50-systems/ModuleStore/interfaces/IModuleManifest';
-import { NotificationSystem } from '../../../50-systems/NotificationSystem/0-NotificationSystem';
-import { Translate } from '../../../50-systems/TranslationsSystem/components/Translate';
 
 export function makeDepracatedWarningModule(protoModule: { manifest: IModuleManifest }): IFactory<IModuleDefinition> {
     return () => {

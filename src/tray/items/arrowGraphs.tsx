@@ -1,9 +1,8 @@
-import React from 'react';
 import {
-    ITrayDynamicItemList,
-    ITrayDynamicToolbarGroup,
-} from '../../../../40-utils/trayModules/interfaces/ITrayDynamicItemTypes';
-import { Translate } from '../../../../50-systems/TranslationsSystem/components/Translate';
+  ITrayDynamicItemList,
+  ITrayDynamicToolbarGroup, Translate
+} from '@collboard/modules-sdk';
+import React from 'react';
 import { heduDrawingColors } from '../HeduColorAttributeModule';
 import { arrow } from './_utils';
 

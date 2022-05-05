@@ -1,5 +1,5 @@
 import React from 'react';
-import { ITrayDynamicItemList } from '../../../../40-utils/trayModules/interfaces/ITrayDynamicItemTypes';
+import { ITrayDynamicItemList } from '@collboard/modules-sdk';
 const ARROW_HEAD_LENGTH = 15;
 const ARROW_HEAD_WIDTH = 10;
 

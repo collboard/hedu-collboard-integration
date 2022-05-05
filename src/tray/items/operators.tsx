@@ -1,5 +1,5 @@
+import { ITrayDynamicItemList } from '@collboard/modules-sdk';
 import React from 'react';
-import { ITrayDynamicItemList } from '../../../../40-utils/trayModules/interfaces/ITrayDynamicItemTypes';
 import { heduDrawingColors } from '../HeduColorAttributeModule';
 
 function generateOperators(operators: { [key: string]: string }): ITrayDynamicItemList {

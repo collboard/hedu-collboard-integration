@@ -1,9 +1,6 @@
-import { ITrayDynamicDefinition } from '../../../40-utils/trayModules/interfaces/ITrayDynamicItemTypes';
+import { AbstractTrayArt, ITrayDynamicDefinition, makeArtModule, makeDynamicTrayModule } from '@collboard/modules-sdk';
 import { Authors } from '../../../50-systems/ModuleStore/Authors';
 import { internalModules } from '../../../50-systems/ModuleStore/internalModules';
-import { makeArtModule } from '../../../50-systems/ModuleStore/makers/makeArtModule';
-import { makeDynamicTrayModule } from '../../../50-systems/ModuleStore/makers/makeTrayDynamicModule';
-import { AbstractTrayArt } from '../../../71-arts/28-AbstractTrayArt';
 import { HeduItemsGenerator } from './HeduItems';
 
 /**

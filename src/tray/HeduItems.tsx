@@ -1,10 +1,5 @@
+import { ITrayDynamicItemList, ITrayDynamicToolbarItems, NOT_CONSTRUCTABLE, Translate } from '@collboard/modules-sdk';
 import React from 'react';
-import { NOT_CONSTRUCTABLE } from '../../../40-utils/IFactory';
-import {
-    ITrayDynamicItemList,
-    ITrayDynamicToolbarItems,
-} from '../../../40-utils/trayModules/interfaces/ITrayDynamicItemTypes';
-import { Translate } from '../../../50-systems/TranslationsSystem/components/Translate';
 import { itemsArrowGraphs, toolbarArrowGraphs } from './items/arrowGraphs';
 import { itemsBus, toolbarBus } from './items/bus';
 import { itemsClocks, toolbarClocks } from './items/clocks';
