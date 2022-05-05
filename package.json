@@ -1,7 +1,7 @@
 {
   "name": "@hedu/collboard-integration",
   "version": "0.3.47",
-  "description": "Simple sample module for Collboard.com created via @collboard/modules-sdk.",
+  "description": "Integration of H-edu with Collboard.com created via @collboard/modules-sdk.",
   "license": "SEE LICENSE IN LICENSE",
   "contributors": [
     "Pavol Hejný <pavol.hejny@collboard.com> (https://collboard.com/-/about/team)",
