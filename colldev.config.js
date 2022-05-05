@@ -1,3 +1,3 @@
 module.exports = {
-    entryPath: './src/sample-tray-module.tsx',
+    entryPath: './src/tray/HeduModules.tsx',
 };
