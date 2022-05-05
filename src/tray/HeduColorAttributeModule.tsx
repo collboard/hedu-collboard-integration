@@ -1,7 +1,7 @@
 import React from 'react';
 import { IconColor } from '@collboard/modules-sdk';
 import { Authors } from '../../../50-systems/ModuleStore/Authors';
-import { internalModules } from '@collboard/modules-sdk';
+import { declareModule } from '@collboard/modules-sdk';
 import { makeAttributeModule } from '@collboard/modules-sdk';
 
 export const heduDrawingColors: { [key: string]: string } = {
@@ -15,7 +15,7 @@ export const heduDrawingColors: { [key: string]: string } = {
     white: '#ffffff',
 };
 
-internalModules.declareModule(
+declareModule(
     makeAttributeModule<string>({
         manifest: {
             flags: { isDevelopment: true, isExperimental: true }, // ['development', 'experimental']

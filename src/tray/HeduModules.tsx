@@ -1,6 +1,12 @@
-import { AbstractTrayArt, ITrayDynamicDefinition, makeArtModule, makeDynamicTrayModule } from '@collboard/modules-sdk';
+import {
+    AbstractTrayArt,
+    declareModule,
+    ITrayDynamicDefinition,
+    makeArtModule,
+    makeDynamicTrayModule,
+} from '@collboard/modules-sdk';
 import { Authors } from '../../../50-systems/ModuleStore/Authors';
-import { internalModules } from '../../../50-systems/ModuleStore/internalModules';
+
 import { HeduItemsGenerator } from './HeduItems';
 
 /**
@@ -14,7 +20,7 @@ const trayDefinition: ITrayDynamicDefinition = {
     getToolbarItems: HeduItemsGenerator.toolbar.bind(HeduItemsGenerator),
 };
 
-internalModules.declareModule(
+declareModule(
     makeDynamicTrayModule({
         manifest: {
             name: 'HeduToolV2',
@@ -44,7 +50,7 @@ internalModules.declareModule(
     }),
 );
 
-internalModules.declareModule(() => makeArtModule(HeduArt));
+declareModule(() => makeArtModule(HeduArt));
 
 class HeduArt extends AbstractTrayArt {
     /**

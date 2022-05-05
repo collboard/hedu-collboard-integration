@@ -1,16 +1,13 @@
+import { Abstract2dArt, Authors, declareModule, makeArtModule } from '@collboard/modules-sdk';
 import React from 'react';
 import { Vector } from 'xyzt';
-import { Authors } from '@collboard/modules-sdk';
-import { internalModules } from '@collboard/modules-sdk';
-import { makeArtModule } from '@collboard/modules-sdk';
-import { Abstract2dArt } from '@collboard/modules-sdk';
 import { makeDepracatedWarningModule } from './makeDepracatedWarningModule';
 
 /**
  * Note: In future this file will we in independent repository as external module.
  */
 
-internalModules.declareModule(
+declareModule(
     makeDepracatedWarningModule({
         manifest: {
             name: 'HeduTool',
@@ -30,8 +27,8 @@ internalModules.declareModule(
 
 // TODO: !! Is this working?
 // TODO: !! Migrations
-//       > internalModules.declareModule(() => makeArtModule({ name: 'Hedu', class: HeduDeprecatedArt }));
-internalModules.declareModule(() => makeArtModule(HeduDeprecatedArt));
+//       > declareModule(() => makeArtModule({ name: 'Hedu', class: HeduDeprecatedArt }));
+declareModule(() => makeArtModule(HeduDeprecatedArt));
 
 /**
  * @deprecated
