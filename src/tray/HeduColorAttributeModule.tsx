@@ -28,6 +28,7 @@ declareModule(
 
             icon: 'http://localhost:9980/icons/hejny.svg',
 
+            // TODO: [🎻] Use authors as contributors from package json
             contributors: [Authors.rosecky],
             categories: ['Colors'],
         },

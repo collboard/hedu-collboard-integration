@@ -19,6 +19,8 @@ declareModule(
             flags: { isDeprecated: true }, // ['deprecated']
             categories: ['Math', 'Education'],
             icon: 'http://localhost:9980/icons/hejny.svg',
+
+            // TODO: [🎻] Use authors as contributors from package json
             author: Authors.hedu,
             contributors: [Authors.rosecky],
         },
