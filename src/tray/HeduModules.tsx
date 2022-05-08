@@ -51,8 +51,6 @@ declareModule(
     }),
 );
 
-declareModule(() => makeArtModule(HeduArt));
-
 class HeduArt extends AbstractTrayArt {
     /**
      * Note: Due to legacy reasons, naming is:
@@ -69,3 +67,5 @@ class HeduArt extends AbstractTrayArt {
         return trayDefinition;
     }
 }
+
+declareModule(makeArtModule(HeduArt));

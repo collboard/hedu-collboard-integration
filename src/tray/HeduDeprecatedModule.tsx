@@ -27,11 +27,6 @@ declareModule(
     }),
 );
 
-// TODO: !! Is this working?
-// TODO: !! Migrations
-//       > declareModule(() => makeArtModule({ name: 'Hedu', class: HeduDeprecatedArt }));
-declareModule(() => makeArtModule(HeduDeprecatedArt));
-
 /**
  * @deprecated
  */
@@ -57,3 +52,8 @@ class HeduDeprecatedArt extends Abstract2dArt {
         return <></>;
     }
 }
+
+// TODO: !! Is this working?
+// TODO: !! Migrations
+//       > declareModule(() => makeArtModule({ name: 'Hedu', class: HeduDeprecatedArt }));
+declareModule(makeArtModule(HeduDeprecatedArt));
