@@ -1,11 +1,11 @@
 import {
     AbstractTrayArt,
+    Authors,
     declareModule,
     ITrayDynamicDefinition,
     makeArtModule,
     makeDynamicTrayModule,
 } from '@collboard/modules-sdk';
-import { Authors } from '../../../50-systems/ModuleStore/Authors';
 
 import { HeduItemsGenerator } from './HeduItems';
 
