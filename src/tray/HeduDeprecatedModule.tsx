@@ -10,7 +10,8 @@ import { makeDepracatedWarningModule } from './makeDepracatedWarningModule';
 declareModule(
     makeDepracatedWarningModule({
         manifest: {
-            name: 'HeduTool',
+            name: '@hedu/tray-tool',
+            deprecatedNames: 'HeduTool',
             title: { en: 'H-edu', cs: 'H-edu' },
             description: {
                 en: 'This module is deprecated, please deactivate it and use the new one...',

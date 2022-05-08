@@ -16,7 +16,8 @@ declareModule(
     makeAttributeModule<string>({
         manifest: {
             flags: { isDevelopment: true, isExperimental: true }, // ['development', 'experimental']
-            name: 'HeduColorAttribute',
+            name: '@hedu/color-attribute',
+            deprecatedNames: 'HeduColorAttribute',
             title: { en: 'H-edu colors', cs: 'H-edu barvy' },
             description: {
                 en: 'Use similar colors as those on H-edu',
