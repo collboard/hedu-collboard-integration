@@ -1,19 +1,19 @@
 import { ITrayDynamicItemList, ITrayDynamicToolbarGroup, Translate } from '@collboard/modules-sdk';
 import React from 'react';
-import kid01 from '../assets/tray/modules/Hedu/park/kid01.svg';
-import kid02 from '../assets/tray/modules/Hedu/park/kid02.svg';
-import kid03 from '../assets/tray/modules/Hedu/park/kid03.svg';
-import park from '../assets/tray/modules/Hedu/park/park.svg';
-import station01 from '../assets/tray/modules/Hedu/park/station01.svg';
-import station02 from '../assets/tray/modules/Hedu/park/station02.svg';
-import station03 from '../assets/tray/modules/Hedu/park/station03.svg';
-import station04 from '../assets/tray/modules/Hedu/park/station04.svg';
-import station05 from '../assets/tray/modules/Hedu/park/station05.svg';
-import station06 from '../assets/tray/modules/Hedu/park/station06.svg';
-import station07 from '../assets/tray/modules/Hedu/park/station07.svg';
-import station08 from '../assets/tray/modules/Hedu/park/station08.svg';
-import station09 from '../assets/tray/modules/Hedu/park/station09.svg';
-import station10 from '../assets/tray/modules/Hedu/park/station10.svg';
+import kid01 from '../../../assets/tray/park/kid01.svg';
+import kid02 from '../../../assets/tray/park/kid02.svg';
+import kid03 from '../../../assets/tray/park/kid03.svg';
+import park from '../../../assets/tray/park/park.svg';
+import station01 from '../../../assets/tray/park/station01.svg';
+import station02 from '../../../assets/tray/park/station02.svg';
+import station03 from '../../../assets/tray/park/station03.svg';
+import station04 from '../../../assets/tray/park/station04.svg';
+import station05 from '../../../assets/tray/park/station05.svg';
+import station06 from '../../../assets/tray/park/station06.svg';
+import station07 from '../../../assets/tray/park/station07.svg';
+import station08 from '../../../assets/tray/park/station08.svg';
+import station09 from '../../../assets/tray/park/station09.svg';
+import station10 from '../../../assets/tray/park/station10.svg';
 import { heduDrawingColors } from '../HeduColorAttributeModule';
 
 const stations = {

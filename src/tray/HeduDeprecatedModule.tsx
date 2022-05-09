@@ -1,8 +1,8 @@
 import { Abstract2dArt, Authors, declareModule, makeArtModule } from '@collboard/modules-sdk';
 import React from 'react';
 import { Vector } from 'xyzt';
+import hejny from '../../assets/icons/hejny.svg';
 import { makeDepracatedWarningModule } from './makeDepracatedWarningModule';
-import hejny from '../assets/icons/hejny.svg';
 
 /**
  * Note: In future this file will we in independent repository as external module.

@@ -6,9 +6,8 @@ import {
     makeArtModule,
     makeDynamicTrayModule,
 } from '@collboard/modules-sdk';
-import hejny from '../assets/icons/hejny.svg';
+import hejny from '../../assets/icons/hejny.svg';
 import { HeduItemsGenerator } from './HeduItems';
-
 
 /**
  * Note: In future this file will we in independent repository as external module.
@@ -69,4 +68,3 @@ class HeduArt extends AbstractTrayArt {
 }
 
 declareModule(makeArtModule(HeduArt));
-
