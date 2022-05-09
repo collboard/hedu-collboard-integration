@@ -23,7 +23,8 @@ const trayDefinition: ITrayDynamicDefinition = {
 declareModule(
     makeDynamicTrayModule({
         manifest: {
-            name: '@hedu/tray-tool',
+          // TODO: [🍗] It should be unde "hedu" scope
+            name: '@collboard/hedu-tray-tool',
             version,
             deprecatedNames: 'HeduToolV2',
             title: { en: 'H-edu', cs: 'H-edu' },
@@ -61,7 +62,7 @@ class HeduArt extends AbstractTrayArt {
     public static serializeName = 'HeduV2';
     public static manifest = {
         // Note+TODO: All modules should be in format @collboard/module-name but we started with art modules
-        // TODO: It should be unde hedu scope - "@hedu/art" but there is no deprecatedNames on HeduArt
+        // TODO: [🍗] It should be unde "hedu" scope - "@hedu/art" but there is no deprecatedNames on HeduArt
         name: '@collboard/hedu-art',
         version,
     };

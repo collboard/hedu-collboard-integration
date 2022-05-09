@@ -18,7 +18,8 @@ declareModule(
     makeAttributeModule<string>({
         manifest: {
             flags: { isDevelopment: true, isExperimental: true }, // ['development', 'experimental']
-            name: '@hedu/color-attribute',
+            // TODO: [🍗] It should be unde "hedu" scope
+            name: '@collboard/hedu-color-attribute',
             version,
             deprecatedNames: 'HeduColorAttribute',
             title: { en: 'H-edu colors', cs: 'H-edu barvy' },
