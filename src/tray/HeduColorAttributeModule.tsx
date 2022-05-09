@@ -1,5 +1,6 @@
 import { Authors, declareModule, IconColor, makeAttributeModule } from '@collboard/modules-sdk';
 import React from 'react';
+import hejny from '../assets/icons/hejny.svg';
 
 export const heduDrawingColors: { [key: string]: string } = {
     black: '#000000',
@@ -24,7 +25,7 @@ declareModule(
                 cs: 'Používejte na svých tabulích stejné barvy, jako jsou na H-edu',
             },
 
-            icon: 'http://localhost:9980/icons/hejny.svg',
+            icon: hejny,
 
             // TODO: [🎻] Use authors as contributors from package json
             contributors: [Authors.rosecky],

@@ -1,37 +1,43 @@
 import { ITrayDynamicItemList, ITrayDynamicToolbarGroup, Translate } from '@collboard/modules-sdk';
 import React from 'react';
+import kid01 from '../assets/tray/modules/Hedu/park/kid01.svg';
+import kid02 from '../assets/tray/modules/Hedu/park/kid02.svg';
+import kid03 from '../assets/tray/modules/Hedu/park/kid03.svg';
+import park from '../assets/tray/modules/Hedu/park/park.svg';
+import station01 from '../assets/tray/modules/Hedu/park/station01.svg';
+import station02 from '../assets/tray/modules/Hedu/park/station02.svg';
+import station03 from '../assets/tray/modules/Hedu/park/station03.svg';
+import station04 from '../assets/tray/modules/Hedu/park/station04.svg';
+import station05 from '../assets/tray/modules/Hedu/park/station05.svg';
+import station06 from '../assets/tray/modules/Hedu/park/station06.svg';
+import station07 from '../assets/tray/modules/Hedu/park/station07.svg';
+import station08 from '../assets/tray/modules/Hedu/park/station08.svg';
+import station09 from '../assets/tray/modules/Hedu/park/station09.svg';
+import station10 from '../assets/tray/modules/Hedu/park/station10.svg';
 import { heduDrawingColors } from '../HeduColorAttributeModule';
 
-const stations = [
-    'station01.svg',
-    'station02.svg',
-    'station03.svg',
-    'station04.svg',
-    'station05.svg',
-    'station06.svg',
-    'station07.svg',
-    'station08.svg',
-    'station09.svg',
-    'station10.svg',
-];
-const kids = ['kid01.svg', 'kid02.svg', 'kid03.svg'];
-const park = 'park.svg';
+const stations = {
+    station01,
+    station02,
+    station03,
+    station04,
+    station05,
+    station06,
+    station07,
+    station08,
+    station09,
+    station10,
+};
+const kids = { kid01, kid02, kid03 };
 
 function generateStations() {
     const result: ITrayDynamicItemList = {};
 
-    stations.forEach((filename, index) => {
+    Object.values(stations).forEach((href, index) => {
         result['parkStation' + (index + 1)] = {
             content: (
                 <g>
-                    <image
-                        preserveAspectRatio="xMidYMid meet"
-                        x="0"
-                        y="0"
-                        width="150"
-                        height="150"
-                        xlinkHref={'http://localhost:9980/modules/Hedu/park/' + filename}
-                    />
+                    <image preserveAspectRatio="xMidYMid meet" x="0" y="0" width="150" height="150" xlinkHref={href} />
                 </g>
             ),
             defaultColor: heduDrawingColors.white,
@@ -44,18 +50,11 @@ function generateStations() {
 function generateKids() {
     const result: ITrayDynamicItemList = {};
 
-    kids.forEach((filename, index) => {
+    Object.values(kids).forEach((href, index) => {
         result['parkKid' + (index + 1)] = {
             content: (
                 <g>
-                    <image
-                        preserveAspectRatio="xMidYMid meet"
-                        x="0"
-                        y="0"
-                        width="150"
-                        height="150"
-                        xlinkHref={'http://localhost:9980/modules/Hedu/park/' + filename}
-                    />
+                    <image preserveAspectRatio="xMidYMid meet" x="0" y="0" width="150" height="150" xlinkHref={href} />
                 </g>
             ),
             defaultColor: heduDrawingColors.white,
@@ -72,14 +71,7 @@ export function itemsPark(): ITrayDynamicItemList {
         park: {
             content: (
                 <g>
-                    <image
-                        preserveAspectRatio="xMidYMid meet"
-                        x="0"
-                        y="0"
-                        width="600"
-                        height="500"
-                        xlinkHref={'http://localhost:9980/modules/Hedu/park/' + park}
-                    />
+                    <image preserveAspectRatio="xMidYMid meet" x="0" y="0" width="600" height="500" xlinkHref={park} />
                 </g>
             ),
             defaultColor: heduDrawingColors.white,

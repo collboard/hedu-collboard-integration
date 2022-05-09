@@ -6,8 +6,9 @@ import {
     makeArtModule,
     makeDynamicTrayModule,
 } from '@collboard/modules-sdk';
-
+import hejny from '../assets/icons/hejny.svg';
 import { HeduItemsGenerator } from './HeduItems';
+
 
 /**
  * Note: In future this file will we in independent repository as external module.
@@ -15,7 +16,6 @@ import { HeduItemsGenerator } from './HeduItems';
 
 const trayDefinition: ITrayDynamicDefinition = {
     className: 'HeduModule',
-    imageFolder: 'http://localhost:9980/modules/Hedu',
     getItems: HeduItemsGenerator.items.bind(HeduItemsGenerator),
     getToolbarItems: HeduItemsGenerator.toolbar.bind(HeduItemsGenerator),
 };
@@ -32,7 +32,7 @@ declareModule(
             },
 
             categories: ['Math', 'Education'],
-            icon: 'http://localhost:9980/icons/hejny.svg',
+            icon: hejny,
 
             // TODO: [🎻] Use authors as contributors from package json
             author: Authors.hedu,
@@ -40,7 +40,6 @@ declareModule(
         },
         icon: {
             order: 60,
-
             icon: 'hejny',
             boardCursor: 'default',
         },
@@ -70,3 +69,4 @@ class HeduArt extends AbstractTrayArt {
 }
 
 declareModule(makeArtModule(HeduArt));
+

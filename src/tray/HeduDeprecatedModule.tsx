@@ -2,6 +2,7 @@ import { Abstract2dArt, Authors, declareModule, makeArtModule } from '@collboard
 import React from 'react';
 import { Vector } from 'xyzt';
 import { makeDepracatedWarningModule } from './makeDepracatedWarningModule';
+import hejny from '../assets/icons/hejny.svg';
 
 /**
  * Note: In future this file will we in independent repository as external module.
@@ -19,7 +20,7 @@ declareModule(
             },
             flags: { isDeprecated: true }, // ['deprecated']
             categories: ['Math', 'Education'],
-            icon: 'http://localhost:9980/icons/hejny.svg',
+            icon: hejny,
 
             // TODO: [🎻] Use authors as contributors from package json
             author: Authors.hedu,

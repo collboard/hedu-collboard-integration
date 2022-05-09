@@ -22,6 +22,26 @@ import { itemsTiles, toolbarTiles } from './items/tiles';
 import { itemsTrains, toolbarTrains } from './items/trains';
 import { itemsWebs, toolbarWebs } from './items/webs';
 
+import arrowGraphs from '../assets/tray/categories/arrowGraphs.svg';
+import bus from '../assets/tray/categories/bus.svg';
+import clocks from '../assets/tray/categories/clocks.svg';
+import coins from '../assets/tray/categories/coins.svg';
+import cubes from '../assets/tray/categories/cubes.svg';
+import dice from '../assets/tray/categories/dice.svg';
+import grids from '../assets/tray/categories/grids.svg';
+import indianMultiplication from '../assets/tray/categories/indianMultiplication.svg';
+import leson from '../assets/tray/categories/leson.svg';
+import multiplicationSquares from '../assets/tray/categories/multiplicationSquares.svg';
+import park from '../assets/tray/categories/park.svg';
+import scales from '../assets/tray/categories/scales.svg';
+import shapes from '../assets/tray/categories/shapes.svg';
+import snakes from '../assets/tray/categories/snakes.svg';
+import stepping from '../assets/tray/categories/stepping.svg';
+import sticks from '../assets/tray/categories/sticks.svg';
+import sumTriangles from '../assets/tray/categories/sumTriangles.svg';
+import tiles from '../assets/tray/categories/tiles.svg';
+import trains from '../assets/tray/categories/trains.svg';
+
 export class HeduItemsGenerator {
     public static readonly [NOT_CONSTRUCTABLE] = true;
 
@@ -79,117 +99,121 @@ export class HeduItemsGenerator {
             {
                 title: <Translate name={`Hedu / tiles`}>Parkety</Translate>,
                 scale: 0.8,
-                icon: 'tiles.svg',
+                icon: tiles,
                 items: toolbarTiles(),
             },
             {
                 title: <Translate name={`Hedu / grids`}>Mřížky</Translate>,
                 scale: 0.5,
-                icon: 'grids.svg',
+                icon: grids,
                 items: toolbarGrids(),
             },
             {
                 title: <Translate name={`Hedu / trains`}>Vláčky</Translate>,
                 scale: 0.8,
-                icon: 'trains.svg',
+                icon: trains,
                 items: toolbarTrains(),
             },
             {
                 title: <Translate name={`Hedu / sticks`}>Dřívka</Translate>,
                 scale: 0.7,
-                icon: 'sticks.svg',
+                icon: sticks,
                 items: toolbarSticks(),
             },
             {
                 title: <Translate name={`Hedu / cubes`}>Krychle</Translate>,
                 scale: 1,
-                icon: 'cubes.svg',
+                icon: cubes,
                 items: toolbarCubes(),
             },
             {
                 title: <Translate name={`Hedu / shapes`}>Tvary</Translate>,
                 scale: 1,
-                icon: 'shapes.svg',
+                icon: shapes,
                 items: toolbarShapes(),
             },
             {
                 title: <Translate name={`Hedu / sum triangles`}>Součtové trojúhelníky</Translate>,
                 scale: 0.35,
-                icon: 'sumTriangles.svg',
+                icon: sumTriangles,
                 items: toolbarSumTriangles(),
             },
             {
                 title: <Translate name={`Hedu / multiplication squares`}>Násobilkové čtverce</Translate>,
                 scale: 0.35,
-                icon: 'multiplicationSquares.svg',
+                icon: multiplicationSquares,
                 items: toolbarMultiplicationSquares(),
             },
             {
                 title: <Translate name={`Hedu / arrow graphs`}>Šipkové grafy a pavučiny</Translate>,
                 scale: 0.35,
-                icon: 'arrowGraphs.svg',
+                icon: arrowGraphs,
                 items: [...toolbarArrowGraphs(), ...toolbarWebs()],
             },
             {
                 title: <Translate name={`Hedu / snakes`}>Hadi</Translate>,
                 scale: 0.7,
-                icon: 'snakes.svg',
+                icon: snakes,
                 items: toolbarSnakes(),
             },
             {
                 title: <Translate name={`Hedu / leson`}>Zvířátka dědy Lesoně</Translate>,
                 scale: 1,
-                icon: 'leson.svg',
+                icon: leson,
                 items: toolbarLeson(),
             },
             {
                 title: <Translate name={`Hedu / scales`}>Váhy</Translate>,
                 scale: 1,
-                icon: 'scales.svg',
+                icon: scales,
                 items: toolbarScales(),
             },
             {
                 title: <Translate name={`Hedu / stepping`}>Krokování a šipkový zápis v mříži</Translate>,
                 scale: 1,
-                icon: 'stepping.svg',
+                icon: stepping,
                 items: toolbarStepping(),
             },
             {
                 title: <Translate name={`Hedu / indian multiplication`}>Indické násobení</Translate>,
                 scale: 0.35,
-                icon: 'indianMultiplication.svg',
+                icon: indianMultiplication,
                 items: toolbarIndianMultiplication(),
             },
             {
                 title: <Translate name={`Hedu / bus`}>Autobus</Translate>,
                 scale: 0.35,
-                icon: 'bus.svg',
+                icon: bus,
                 items: toolbarBus(),
             },
             {
                 title: <Translate name={`Hedu / clocks`}>Ciferníky</Translate>,
                 scale: 0.35,
-                icon: 'clocks.svg',
+                icon: clocks,
                 items: toolbarClocks(),
             },
             {
                 title: <Translate name={`Hedu / coins`}>Mince</Translate>,
                 scale: 1,
-                icon: 'coins.svg',
+                icon: coins,
                 items: toolbarCoins(),
             },
             {
                 title: <Translate name={`Hedu / park`}>Dětský park</Translate>,
                 scale: 0.5,
-                icon: 'park.svg',
+                icon: park,
                 items: toolbarPark(),
             },
             {
                 title: <Translate name={`Hedu / dice`}>Stěny kostky</Translate>,
                 scale: 1,
-                icon: 'dice.svg',
+                icon: dice,
                 items: toolbarDice(),
             },
         ];
     }
 }
+
+/**
+ * TODO: Make translations inside this repository
+ */
