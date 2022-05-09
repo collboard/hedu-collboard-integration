@@ -3,6 +3,7 @@ import React from 'react';
 import { Vector } from 'xyzt';
 import hejny from '../../assets/icons/hejny.svg';
 import { makeDepracatedWarningModule } from './makeDepracatedWarningModule';
+import { version } from '../../package.json';
 
 /**
  * Note: In future this file will we in independent repository as external module.
@@ -12,6 +13,7 @@ declareModule(
     makeDepracatedWarningModule({
         manifest: {
             name: '@hedu/tray-tool',
+            version,
             deprecatedNames: 'HeduTool',
             title: { en: 'H-edu', cs: 'H-edu' },
             description: {
@@ -42,6 +44,7 @@ class HeduDeprecatedArt extends Abstract2dArt {
     public static manifest = {
         // Note+TODO: All modules should be in format @collboard/module-name but we started with art modules
         name: '@collboard/hedu-art-deprecated',
+        version
         // TODO: Deprecation should be made with versioning
     };
 

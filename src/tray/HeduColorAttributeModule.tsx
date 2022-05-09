@@ -1,6 +1,7 @@
 import { Authors, declareModule, IconColor, makeAttributeModule } from '@collboard/modules-sdk';
 import React from 'react';
 import hejny from '../../assets/icons/hejny.svg';
+import { version } from '../../package.json';
 
 export const heduDrawingColors: { [key: string]: string } = {
     black: '#000000',
@@ -18,6 +19,7 @@ declareModule(
         manifest: {
             flags: { isDevelopment: true, isExperimental: true }, // ['development', 'experimental']
             name: '@hedu/color-attribute',
+            version,
             deprecatedNames: 'HeduColorAttribute',
             title: { en: 'H-edu colors', cs: 'H-edu barvy' },
             description: {
