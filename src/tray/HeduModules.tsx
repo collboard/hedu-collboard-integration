@@ -22,7 +22,8 @@ const trayDefinition: ITrayDynamicDefinition = {
 declareModule(
     makeDynamicTrayModule({
         manifest: {
-            name: 'HeduToolV2',
+            name: '@hedu/tray-tool',
+            deprecatedNames: 'HeduToolV2',
             title: { en: 'H-edu', cs: 'H-edu' },
             // TODO: Finish
             description: {

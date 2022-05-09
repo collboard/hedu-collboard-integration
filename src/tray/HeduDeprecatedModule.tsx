@@ -12,7 +12,7 @@ import { version } from '../../package.json';
 declareModule(
     makeDepracatedWarningModule({
         manifest: {
-            name: '@hedu/tray-tool',
+            name: '@hedu/tray-tool-deprecated',
             version,
             deprecatedNames: 'HeduTool',
             title: { en: 'H-edu', cs: 'H-edu' },
