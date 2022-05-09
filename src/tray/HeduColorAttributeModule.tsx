@@ -1,7 +1,7 @@
 import { Authors, declareModule, IconColor, makeAttributeModule } from '@collboard/modules-sdk';
 import React from 'react';
 import hejny from '../../assets/icons/hejny.svg';
-import { version } from '../../package.json';
+import { version,repository } from '../../package.json';
 
 export const heduDrawingColors: { [key: string]: string } = {
     black: '#000000',
@@ -20,7 +20,7 @@ declareModule(
             flags: { isDevelopment: true, isExperimental: true }, // ['development', 'experimental']
             // TODO: [🍗] It should be unde "hedu" scope
             name: '@collboard/hedu-color-attribute',
-            version,
+            version,repository,
             deprecatedNames: 'HeduColorAttribute',
             title: { en: 'H-edu colors', cs: 'H-edu barvy' },
             description: {

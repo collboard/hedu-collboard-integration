@@ -7,7 +7,7 @@ import {
     makeDynamicTrayModule,
 } from '@collboard/modules-sdk';
 import hejny from '../../assets/icons/hejny.svg';
-import { version } from '../../package.json';
+import { repository, version } from '../../package.json';
 import { HeduItemsGenerator } from './HeduItems';
 
 /**
@@ -23,9 +23,10 @@ const trayDefinition: ITrayDynamicDefinition = {
 declareModule(
     makeDynamicTrayModule({
         manifest: {
-          // TODO: [🍗] It should be unde "hedu" scope
+            // TODO: [🍗] It should be unde "hedu" scope
             name: '@collboard/hedu-tray-tool',
             version,
+            repository,
             deprecatedNames: 'HeduToolV2',
             title: { en: 'H-edu', cs: 'H-edu' },
             // TODO: Finish
@@ -65,6 +66,7 @@ class HeduArt extends AbstractTrayArt {
         // TODO: [🍗] It should be unde "hedu" scope - "@hedu/art" but there is no deprecatedNames on HeduArt
         name: '@collboard/hedu-art',
         version,
+        repository,
     };
 
     getDefinition() {
