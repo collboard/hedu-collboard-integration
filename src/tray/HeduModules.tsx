@@ -7,6 +7,7 @@ import {
     makeDynamicTrayModule,
 } from '@collboard/modules-sdk';
 import hejny from '../../assets/icons/hejny.svg';
+import { version } from '../../package.json';
 import { HeduItemsGenerator } from './HeduItems';
 
 /**
@@ -23,6 +24,7 @@ declareModule(
     makeDynamicTrayModule({
         manifest: {
             name: '@hedu/tray-tool',
+            version,
             deprecatedNames: 'HeduToolV2',
             title: { en: 'H-edu', cs: 'H-edu' },
             // TODO: Finish
