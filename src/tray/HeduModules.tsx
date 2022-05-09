@@ -63,6 +63,7 @@ class HeduArt extends AbstractTrayArt {
         // Note+TODO: All modules should be in format @collboard/module-name but we started with art modules
         // TODO: It should be unde hedu scope - "@hedu/art" but there is no deprecatedNames on HeduArt
         name: '@collboard/hedu-art',
+        version,
     };
 
     getDefinition() {
