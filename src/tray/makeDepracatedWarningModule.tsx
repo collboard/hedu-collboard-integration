@@ -1,8 +1,8 @@
-import { IFactory, IModuleDefinition, IModuleManifest, NotificationSystem, Translate } from '@collboard/modules-sdk';
+import { Factory, IModuleDefinition, IModuleManifest, NotificationSystem, Translate } from '@collboard/modules-sdk';
 import { Destroyable } from 'destroyable';
 import React from 'react';
 
-export function makeDepracatedWarningModule(protoModule: { manifest: IModuleManifest }): IFactory<IModuleDefinition> {
+export function makeDepracatedWarningModule(protoModule: { manifest: IModuleManifest }): Factory<IModuleDefinition> {
     return () => {
         const { manifest } = protoModule;
         return {
