@@ -1,6 +1,6 @@
 {
     "name": "@hedu/collboard-integration",
-    "version": "0.4.20",
+    "version": "0.4.21",
     "description": "Integration of H-edu with Collboard.com",
     "license": "SEE LICENSE IN LICENSE",
     "contributors": [
