@@ -42,9 +42,7 @@ export function makeDepracatedWarningModule(protoModule: { manifest: IModuleMani
                             icon: 'package',
                             onClick: () => {
                                 routingSystem.urlVariables.setValue({ module: 'ModuleStore' });
-                                notificationSystem.notifications = notificationSystem.notifications.filter(
-                                    (notification) => notification.tag !== 'HeduDeprecated',
-                                );
+                                notificationSystem.constrict('HeduDeprecated');
                             },
                         },
                     ],
@@ -64,8 +62,6 @@ class DestroyableNotification extends Destroyable {
     public async destroy() {
         await super.destroy();
 
-        this.notificationSystem.notifications = this.notificationSystem.notifications.filter(
-            (notification) => notification.tag !== this.tagToBeClosed,
-        );
+        this.notificationSystem.constrict(this.tagToBeClosed);
     }
 }
