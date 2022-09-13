@@ -52,8 +52,8 @@ class HeduDeprecatedArt extends Abstract2dArt {
 
     acceptedAttributes = [];
 
-    topLeftCorner = Vector.zero();
-    bottomRightCorner = Vector.zero();
+    topLeft = Vector.zero();
+    bottomRight = Vector.zero();
 
     render() {
         return <></>;
