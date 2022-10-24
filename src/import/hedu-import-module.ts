@@ -1,8 +1,11 @@
 import { declareModule, HTMLArt, measureHtmlSize, sanitizeHtml, topleftArts } from '@collboard/modules-sdk';
+import { repository, version } from '../../package.json';
 
 declareModule({
     manifest: {
         name: '@collboard/hedu-import',
+        repository,
+        version,
     },
     async setup(systems) {
         const { importSystem, appState, collSpace } = await systems.request('importSystem', 'appState', 'collSpace');
