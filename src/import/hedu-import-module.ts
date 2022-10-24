@@ -32,22 +32,12 @@ declareModule({
 
                 const htmlArt = new HTMLArt(
                     sanitizedHtml,
-                    /*
-                        Note: Just for backup:
 
-                        spaceTrim(
-                            (block) => `
-                              <div
-                                style="transform: scale(${1 / appState.transform.value.scale.x}); transform-origin: 0% 0%;"
-                              >
-                                ${block(html)}
-                              </div>
-                          `,
-                        ),*/
                     1 / appState.transform.value.scale.x,
                 );
 
                 htmlArt.originalSize = await measureHtmlSize(sanitizedHtml);
+                htmlArt.locked = true;
 
                 topleftArts({
                     arts: [htmlArt],
