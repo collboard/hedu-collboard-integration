@@ -3,14 +3,6 @@ import { declareModule, HTMLArt, measureHtmlSize, sanitizeHtml, topleftArts } fr
 declareModule({
     manifest: {
         name: '@collboard/hedu-import',
-
-        /*
-        TODO: Should be this here?
-
-        supports: {
-            fileImport: ['text/html'],
-        },
-        */
     },
     async setup(systems) {
         const { importSystem, appState, collSpace } = await systems.request('importSystem', 'appState', 'collSpace');
