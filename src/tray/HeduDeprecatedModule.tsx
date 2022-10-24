@@ -5,10 +5,6 @@ import hejny from '../../assets/icons/hejny.svg';
 import { repository, version } from '../../package.json';
 import { makeDepracatedWarningModule } from './makeDepracatedWarningModule';
 
-/**
- * Note: In future this file will we in independent repository as external module.
- */
-
 declareModule(
     makeDepracatedWarningModule({
         manifest: {
