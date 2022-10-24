@@ -1,3 +1,3 @@
 module.exports = {
-    entryPath: './src/tray/HeduModules.tsx',
+    entryPath: './src/index.ts',
 };
