@@ -1,4 +1,4 @@
-import { declareModule, HTMLArt, measureHtmlSize, sanitizeHtml, topleftArts } from '@collboard/modules-sdk';
+import { HTMLArt, declareModule, measureHtmlSize, sanitizeHtml, topleftArts } from '@collboard/modules-sdk';
 import { repository, version } from '../../package.json';
 
 declareModule({
@@ -31,6 +31,8 @@ declareModule({
                 // TODO: Html = scopeCssInHtml(html);
                 // TODO: Probably split html into items
 
+                // TODO: !!! Remove marked tiles
+
                 const sanitizedHtml = sanitizeHtml(html);
 
                 const htmlArt = new HTMLArt(
@@ -55,3 +57,7 @@ declareModule({
         });
     },
 });
+
+/**
+ * TODO: !!! DRY with https://github.com/collboard/collboard/blob/c25db91a44d76e5484a8e514a4a232cebb7e9691/src/00-modules/files/html/HtmlImportModule.ts#L27
+ */
