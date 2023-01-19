@@ -41,7 +41,7 @@ export function makeDepracatedWarningModule(protoModule: { manifest: IModuleMani
                             title: <Translate name={`Deprecated / button`}>Otevřít správce doplňků</Translate>,
                             icon: 'package',
                             onClick: () => {
-                                routingSystem.urlVariables.setValue({ module: 'ModuleStore' });
+                                routingSystem.urlVariables.setValue({ moduleName: 'ModuleStore' });
                                 notificationSystem.constrict('HeduDeprecated');
                             },
                         },
