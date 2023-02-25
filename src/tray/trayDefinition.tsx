@@ -1,13 +1,6 @@
 import {
-    AbstractTrayArt,
-    Authors,
-    declareModule,
-    ITrayDynamicDefinition,
-    makeArtModule,
-    makeDynamicTrayModule,
+  ITrayDynamicDefinition
 } from '@collboard/modules-sdk';
-import hejny from '../../assets/icons/hejny.svg';
-import { repository, version } from '../../package.json';
 import { HeduItemsGenerator } from './HeduItems';
 
 

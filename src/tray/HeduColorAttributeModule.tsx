@@ -1,7 +1,7 @@
 import { Authors, declareModule, IconColor, makeAttributeModule } from '@collboard/modules-sdk';
 import React from 'react';
 import hejny from '../../assets/icons/hejny.svg';
-import { version,repository } from '../../package.json';
+import { repository, version } from '../../package.json';
 
 export const heduDrawingColors: { [key: string]: string } = {
     black: '#000000',
