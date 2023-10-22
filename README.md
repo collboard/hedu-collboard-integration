@@ -5,10 +5,10 @@
 
 
 [![License of H-edu 💙 Collboard](https://img.shields.io/github/license/collboard/hedu-collboard-integration.svg?style=flat)](https://github.com/collboard/hedu-collboard-integration/blob/main/LICENSE)
+[![lint](https://github.com/collboard/hedu-collboard-integration/actions/workflows/lint.yml/badge.svg)](https://github.com/collboard/hedu-collboard-integration/actions/workflows/lint.yml)
 [![test](https://github.com/collboard/hedu-collboard-integration/actions/workflows/test.yml/badge.svg)](https://github.com/collboard/hedu-collboard-integration/actions/workflows/test.yml)
 [![Known Vulnerabilities](https://snyk.io/test/github/collboard/hedu-collboard-integration/badge.svg)](https://snyk.io/test/github/collboard/hedu-collboard-integration)
-<!--[![lint](https://github.com/collboard/hedu-collboard-integration/actions/workflows/lint.yml/badge.svg)](https://github.com/collboard/hedu-collboard-integration/actions/workflows/lint.yml)-->
-<!--[![Issues](https://img.shields.io/github/issues/collboard/hedu-collboard-integration.svg?style=flat)](https://github.com/collboard/hedu-collboard-integration/issues)-->
+[![Issues](https://img.shields.io/github/issues/collboard/hedu-collboard-integration.svg?style=flat)](https://github.com/collboard/hedu-collboard-integration/issues)
 
 <!--/Badges-->
 
