@@ -13,7 +13,7 @@ export function itemsTiles(): ITrayDynamicItemList {
                     <rect width="30" height="30" x="30" y="30"></rect>
                 </g>
             ),
-            defaultColor: heduDrawingColors.blue,
+            defaultColor: heduDrawingColors.red,
             filters: [heduOutline],
         },
         tileCorner90: {
