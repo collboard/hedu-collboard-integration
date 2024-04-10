@@ -345,6 +345,246 @@ export function itemsTiles(): ITrayDynamicItemList {
             defaultColor: heduDrawingColors.green,
             filters: [heduOutline],
         },
+        tileH: {
+            content: (
+                <g>
+                    <rect width="30" height="30" x="0" y="0"></rect>
+                    <rect width="30" height="30" x="0" y="30"></rect>
+                    <rect width="30" height="30" x="0" y="60"></rect>
+                    <rect width="30" height="30" x="30" y="30"></rect>
+                    <rect width="30" height="30" x="60" y="0"></rect>
+                    <rect width="30" height="30" x="60" y="30"></rect>
+                    <rect width="30" height="30" x="60" y="60"></rect>
+                </g>
+            ),
+            defaultColor: heduDrawingColors.blue,
+            filters: [heduOutline],
+        },
+        tileH90: {
+            // Rotated item
+            content: (
+                <g>
+                    <rect width="30" height="30" x="0" y="0"></rect>
+                    <rect width="30" height="30" x="30" y="0"></rect>
+                    <rect width="30" height="30" x="60" y="0"></rect>
+                    <rect width="30" height="30" x="30" y="30"></rect>
+                    <rect width="30" height="30" x="0" y="60"></rect>
+                    <rect width="30" height="30" x="30" y="60"></rect>
+                    <rect width="30" height="30" x="60" y="60"></rect>
+                </g>
+            ),
+            defaultColor: heduDrawingColors.blue,
+            filters: [heduOutline],
+        },
+        tileZ: {
+            content: (
+                <g>
+                    <rect width="30" height="30" x="0" y="0"></rect>
+                    <rect width="30" height="30" x="30" y="60"></rect>
+                    <rect width="30" height="30" x="30" y="30"></rect>
+                    <rect width="30" height="30" x="30" y="0"></rect>
+                    <rect width="30" height="30" x="60" y="60"></rect>
+                </g>
+            ),
+            defaultColor: heduDrawingColors.yellow,
+            filters: [heduOutline],
+        },
+        tileZ90: {
+            // Rotated item
+            content: (
+                <g>
+                    <rect width="30" height="30" x="60" y="0"></rect>
+                    <rect width="30" height="30" x="0" y="30"></rect>
+                    <rect width="30" height="30" x="0" y="60"></rect>
+                    <rect width="30" height="30" x="30" y="30"></rect>
+                    <rect width="30" height="30" x="60" y="30"></rect>
+                </g>
+            ),
+            defaultColor: heduDrawingColors.yellow,
+            filters: [heduOutline],
+        },
+        tileT: {
+            content: (
+                <g>
+                    <rect width="30" height="30" x="0" y="0"></rect>
+                    <rect width="30" height="30" x="30" y="0"></rect>
+                    <rect width="30" height="30" x="60" y="0"></rect>
+                    <rect width="30" height="30" x="30" y="30"></rect>
+                    <rect width="30" height="30" x="30" y="60"></rect>
+                </g>
+            ),
+            defaultColor: heduDrawingColors.green,
+            filters: [heduOutline],
+        },
+        tileT90: {
+            // Rotated item
+            content: (
+                <g>
+                    <rect width="30" height="30" x="0" y="30"></rect>
+                    <rect width="30" height="30" x="30" y="30"></rect>
+                    <rect width="30" height="30" x="60" y="30"></rect>
+                    <rect width="30" height="30" x="60" y="0"></rect>
+                    <rect width="30" height="30" x="60" y="60"></rect>
+                </g>
+            ),
+            defaultColor: heduDrawingColors.green,
+            filters: [heduOutline],
+        },
+        tileT180: {
+            // Rotated item
+            content: (
+                <g>
+                    <rect width="30" height="30" x="0" y="60"></rect>
+                    <rect width="30" height="30" x="30" y="60"></rect>
+                    <rect width="30" height="30" x="60" y="60"></rect>
+                    <rect width="30" height="30" x="30" y="30"></rect>
+                    <rect width="30" height="30" x="30" y="0"></rect>
+                </g>
+            ),
+            defaultColor: heduDrawingColors.green,
+            filters: [heduOutline],
+        },
+        tileT270: {
+            // Rotated item
+            content: (
+                <g>
+                    <rect width="30" height="30" x="0" y="0"></rect>
+                    <rect width="30" height="30" x="0" y="30"></rect>
+                    <rect width="30" height="30" x="0" y="60"></rect>
+                    <rect width="30" height="30" x="30" y="30"></rect>
+                    <rect width="30" height="30" x="60" y="30"></rect>
+                </g>
+            ),
+            defaultColor: heduDrawingColors.green,
+            filters: [heduOutline],
+        },
+        tileTractor: {
+            content: (
+                <g>
+                    <rect width="30" height="30" x="0" y="60"></rect>
+                    <rect width="30" height="30" x="0" y="30"></rect>
+                    <rect width="30" height="30" x="30" y="30"></rect>
+                    <rect width="30" height="30" x="30" y="0"></rect>
+                    <rect width="30" height="30" x="60" y="30"></rect>
+                    <rect width="30" height="30" x="60" y="60"></rect>
+                </g>
+            ),
+            defaultColor: heduDrawingColors.red,
+            filters: [heduOutline],
+        },
+        tileTractor90: {
+            // Rotated item
+            content: (
+                <g>
+                    <rect width="30" height="30" x="0" y="0"></rect>
+                    <rect width="30" height="30" x="30" y="0"></rect>
+                    <rect width="30" height="30" x="30" y="30"></rect>
+                    <rect width="30" height="30" x="60" y="30"></rect>
+                    <rect width="30" height="30" x="0" y="60"></rect>
+                    <rect width="30" height="30" x="30" y="60"></rect>
+                </g>
+            ),
+            defaultColor: heduDrawingColors.red,
+            filters: [heduOutline],
+        },
+        tileTractor180: {
+            // Rotated item
+            content: (
+                <g>
+                    <rect width="30" height="30" x="0" y="0"></rect>
+                    <rect width="30" height="30" x="0" y="30"></rect>
+                    <rect width="30" height="30" x="30" y="30"></rect>
+                    <rect width="30" height="30" x="30" y="60"></rect>
+                    <rect width="30" height="30" x="60" y="30"></rect>
+                    <rect width="30" height="30" x="60" y="0"></rect>
+                </g>
+            ),
+            defaultColor: heduDrawingColors.red,
+            filters: [heduOutline],
+        },
+        tileTractor270: {
+            // Rotated item
+            content: (
+                <g>
+                    <rect width="30" height="30" x="0" y="30"></rect>
+                    <rect width="30" height="30" x="30" y="0"></rect>
+                    <rect width="30" height="30" x="30" y="30"></rect>
+                    <rect width="30" height="30" x="30" y="60"></rect>
+                    <rect width="30" height="30" x="60" y="0"></rect>
+                    <rect width="30" height="30" x="60" y="60"></rect>
+                </g>
+            ),
+            defaultColor: heduDrawingColors.red,
+            filters: [heduOutline],
+        },
+        tileD: {
+            content: (
+                <g>
+                    <rect width="30" height="30" x="0" y="60"></rect>
+                    <rect width="30" height="30" x="0" y="30"></rect>
+                    <rect width="30" height="30" x="30" y="60"></rect>
+                    <rect width="30" height="30" x="30" y="30"></rect>
+                    <rect width="30" height="30" x="30" y="0"></rect>
+                </g>
+            ),
+            defaultColor: heduDrawingColors.blue,
+            filters: [heduOutline],
+        },
+        tileD90: {
+            // Rotated item
+            content: (
+                <g>
+                    <rect width="30" height="30" x="0" y="60"></rect>
+                    <rect width="30" height="30" x="0" y="30"></rect>
+                    <rect width="30" height="30" x="30" y="60"></rect>
+                    <rect width="30" height="30" x="30" y="30"></rect>
+                    <rect width="30" height="30" x="60" y="60"></rect>
+                </g>
+            ),
+            defaultColor: heduDrawingColors.blue,
+            filters: [heduOutline],
+        },
+        tileD180: {
+            // Rotated item
+            content: (
+                <g>
+                    <rect width="30" height="30" x="0" y="60"></rect>
+                    <rect width="30" height="30" x="0" y="30"></rect>
+                    <rect width="30" height="30" x="0" y="0"></rect>
+                    <rect width="30" height="30" x="30" y="30"></rect>
+                    <rect width="30" height="30" x="30" y="0"></rect>
+                </g>
+            ),
+            defaultColor: heduDrawingColors.blue,
+            filters: [heduOutline],
+        },
+        tileD270: {
+            // Rotated item
+            content: (
+                <g>
+                    <rect width="30" height="30" x="0" y="30"></rect>
+                    <rect width="30" height="30" x="30" y="30"></rect>
+                    <rect width="30" height="30" x="30" y="60"></rect>
+                    <rect width="30" height="30" x="60" y="30"></rect>
+                    <rect width="30" height="30" x="60" y="60"></rect>
+                </g>
+            ),
+            defaultColor: heduDrawingColors.blue,
+            filters: [heduOutline],
+        },
+        tileCruiser: {
+            content: (
+                <g>
+                    <rect width="30" height="30" x="0" y="30"></rect>
+                    <rect width="30" height="30" x="30" y="30"></rect>
+                    <rect width="30" height="30" x="30" y="60"></rect>
+                    <rect width="30" height="30" x="30" y="0"></rect>
+                    <rect width="30" height="30" x="60" y="30"></rect>
+                </g>
+            ),
+            defaultColor: heduDrawingColors.yellow,
+            filters: [heduOutline],
+        },
     };
 }
 
