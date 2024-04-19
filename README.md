@@ -9,6 +9,7 @@
 [![test](https://github.com/collboard/hedu-collboard-integration/actions/workflows/test.yml/badge.svg)](https://github.com/collboard/hedu-collboard-integration/actions/workflows/test.yml)
 [![Known Vulnerabilities](https://snyk.io/test/github/collboard/hedu-collboard-integration/badge.svg)](https://snyk.io/test/github/collboard/hedu-collboard-integration)
 [![Issues](https://img.shields.io/github/issues/collboard/hedu-collboard-integration.svg?style=flat)](https://github.com/collboard/hedu-collboard-integration/issues)
+<!--[![Socket](https://socket.dev/api/badge/npm/package/@hedu/collboard-integration)](https://socket.dev/npm/package/@hedu/collboard-integration)-->
 
 <!--/Badges-->
 
