@@ -2,7 +2,7 @@
     "name": "@hedu/collboard-integration",
     "version": "1.0.160",
     "description": "Integration of H-edu with Collboard.com",
-    "license": "SEE LICENSE IN LICENSE",
+    "license": "Apache-2.0",
     "contributors": [
         "Pavol Hejný <pavol.hejny@collboard.com> (https://collboard.com/-/about/team)",
         "Jonáš Rosecký <jonas.rosecky@collboard.com> (https://collboard.com/-/about/team)"
